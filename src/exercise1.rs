@@ -29,10 +29,11 @@ fn main() {
     println!("{:#?}",sublist(&arr, &arr2));
 }
 
-//https://tndl.medium.com/rusts-slice-windows-is-really-cool-70d50cdc74c5
+
 // let numbers = vec![1, 2, 3, 4, 5];
 // let has_even = numbers.iter().any(|&x| x % 2 == 0);
 // println!("Has even number: {}", has_even);
+// Here we have an array
 
 // let numbers = vec![1, 2, 3, 4, 5];
 // let any_pair_addition_is_even = numbers.windows(2).any(|slice| {
@@ -42,3 +43,8 @@ fn main() {
 //         }
 //     });
 // println!("Has even number: {:#?}", any_pair_addition_is_even);
+// while windows return an iterator
+//https://tndl.medium.com/rusts-slice-windows-is-really-cool-70d50cdc74c5
+// https://doc.rust-lang.org/std/slice/struct.Windows.html
+//An iterator over overlapping subslices of length size.
+// This struct is created by the windows method on slices.
